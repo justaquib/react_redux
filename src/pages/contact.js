@@ -1,15 +1,8 @@
 import { Inter } from 'next/font/google'
-
-import Footer from '../components/footer'
+import Footer from '../components/perdefined/footer'
 import Header from '../components/header'
+import { useState } from 'react';
 
-import { useState, useEffect } from 'react'
-const inter = Inter({ subsets: ['latin'] })
-
-import io from "socket.io-client"
-import ChatRoom from '@/components/chatRoom'
-
-const socket = io.connect(process.env.NEXT_PUBLIC_SOCKET_URI);
 
 export default function Contact() {
   const [userId, changeUserId] = useState(socket.id);

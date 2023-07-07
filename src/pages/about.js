@@ -1,6 +1,6 @@
 import { Inter } from 'next/font/google'
 
-import Footer from '../components/footer'
+import Footer from '../components/perdefined/footer'
 import Header from '../components/header'
 
 import { useSelector, useDispatch } from 'react-redux'

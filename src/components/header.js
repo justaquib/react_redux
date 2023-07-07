@@ -42,9 +42,9 @@ export default function Header() {
                         >
                             By{' '}
                             <Image
-                                src="/logo.png"
+                                src={process.env.NEXT_PUBLIC_APP_LOGO}
                                 alt="My Logo"
-                                className="dark:invert rounded-xl"
+                                className="rounded-xl"
                                 width={100}
                                 height={24}
                                 priority
